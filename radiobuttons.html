@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <title>formDemo.html</title>
+    <meta charset = "UTF-8" />
+  </head>
+  <body>
+    <h1>Form Demo</h1>
+<!--    <form>-->
+      <!--<fieldset>-->
+       <legend>Selecting elements</legend>
+       <p>
+          <label>Radio buttons</label>            
+          <input type = "radio"
+                 name = "radSize"
+                 id = "sizeSmall"
+                 value = "small"
+                 checked = "checked" />
+          <label for = "sizeSmall">small</label>
+          
+          <input type = "radio"
+                 name = "radSize"
+                 id = "sizeMed"
+                 value = "medium" />
+          <label for = "sizeMed">medium</label>
+ 
+          <input type = "radio"
+                 name = "radSize"
+                 id = "sizeLarge"
+                 value = "large" />
+          <label for = "sizeLarge">large</label>
+        </p>       
+      <!--</fieldset>     -->
+    <!--</form>-->
+    
+    						<textarea readonly="readonly" rows=3 cols=105 name="question" id="question">Some Question Text will go here</textarea>
+    						
+<label for="theme-grey"><input type="radio" id="theme-grey" name="theme" value="grey" />Grey</label>
+<label for="theme-pink"><input type="radio" id="theme-pink" name="theme" value="pink" />Pink</label>
+<label for="theme-green"><input type="radio" id="theme-green" name="theme" value="green" />Green</label>
+
+
+  </body>
+</html>

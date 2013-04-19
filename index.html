@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- This code is taken from the OriginalHoverEffects samples -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="keywords" content="css3, transitions, thumbnail, animation, hover, effect, description, caption" />
+        <meta name="author" content="Sachin Holla for Truvelabs" />
+        
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="hover-css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="hover-css/style_common.css" />
+        <link rel="stylesheet" type="text/css" href="hover-css/style1.css" />
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+        <!-- end of samples -->
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
+                
+		<script type='text/javascript'> 
+			function processSelection(topic){
+				var topic_val=$("#which_topic").val(); 
+				$("#which_topic").val(topic);
+				topic_val=$("#which_topic").val(); 
+				searchform.submit();
+												 			  
+			} 
+		</script> 
+		                
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+		<!-- added a form to capture the topic selection and use this to call the conceptDetail page -->
+		<form id="searchform" method="post" action="ConceptDetail2.php" > 
+				<input type="hidden" name="which_topic" id="which_topic" value="input value"/> 
+		</form> 
+
+        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Project Gyaan</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Change Mode<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Student Mode</a></li>
+                                    <li><a href="parent.php">Parent Mode</a></li>
+                                    <li><a href="admin.php">Admin Mode</a></li>
+                                </ul>
+                            </li>                            
+                            <li><a href="#about">About Gyaan</a></li>
+                            <li><a href="mailto:talk.to@truvelabs.com">Contact Us</a></li>
+                        </ul>
+                        <form class="navbar-form pull-right">
+                            <input class="span2" type="text" placeholder="Email">
+                            <input class="span2" type="password" placeholder="Password">
+                            <button type="submit" class="btn">Sign in</button>
+                        </form>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <!-- Main hero unit for a primary marketing message or call to action -->
+            <div class="hero-unit">
+                <h1>Welcome to Project Gyaan</h1>
+                <p>An initiative to teach the concepts of Math, Science and other Advanced Topics aligned with Global Education Standards.</p>
+                <h5>Global Education. Delivered.</h5>
+                <!--<p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>-->
+            </div>
+			
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="span4">
+                    <h2>Learn By Topic</h2>
+
+                    <p><a class="btn" href="#" onclick="javascript:processSelection('Learn By Topic');" >View details &raquo;</a></p>
+                    
+					<div class="container row">
+						<div class="main span2">
+							<div class="view view-first">
+								<img src="resources/math.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Math</p>
+									<a href="#" onclick="javascript:processSelection('Mathematics');" class="info">Read More</a>
+								</div>
+							</div>  
+						</div>
+												
+						<div class="main span2">
+							<div class="view view-first">
+								<img src="resources/Science.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Science</p>
+									<a href="#" onclick="javascript:processSelection('Science');" class="info">Read More</a>
+								</div>
+							</div>  
+						</div>						
+					</div>
+					
+					<div class="container row">
+						<div class="span2">
+							<div class="view view-first">
+								<img src="resources/Physics.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Physics</p>
+									<a href="#" onclick="javascript:processSelection('Physics');" class="info">Read More</a>
+								</div>
+							</div>  
+						</div>
+						<div class="span2">
+							<div class="view view-first">
+								<img src="resources/Chemistry.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Chemistry</p>
+									<a href="#" onclick="javascript:processSelection('Chemistry');" class="info">Read More</a>
+								</div>
+							</div>  
+						</div>						
+					</div>
+					
+					<div class="container row">
+						<div class="span2">
+							<div class="view view-first">
+								<img src="resources/Bio.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Biology</p>
+									<a href="#" onclick="javascript:processSelection('Biology');" class="info">Read More</a>
+								</div>
+							</div>  
+						</div>
+						<div class="span2">
+							<div class="view view-first">
+								<img src="resources/SurpriseMe.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click to be Surprised!</p>
+									<a href="#" onclick="javascript:processSelection('SurpriseMe');" class="info">Read More</a>
+								</div>
+							</div>  
+			
+						</div>
+			
+					</div>
+				</div>
+				
+                <div class="span4">
+                    <h2>Learn By Grade Level</h2>
+                    <p><a class="btn" href="#" onclick="javascript:processSelection('Learn By Grade Level');" >View details &raquo;</a></p>
+
+					<div class="container row">
+						<div class="span2">
+							<div class="view view-first">
+								<img src="resources/grade1.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Grade 1</p>
+									<a href="#" onclick="javascript:processSelection('Grade1');" class="info">Read More</a>
+								</div>		                    
+							</div>
+						</div>
+						<div class="span2">
+							<div class="view view-first">
+								<img src="resources/grade2.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Grade 2</p>
+									<a href="#" onclick="javascript:processSelection('Grade2');" class="info">Read More</a>
+								</div>		                    
+							</div>
+						</div>
+					</div>
+					<div class="container row">
+						<div class="span2">
+							<div class="view view-first">
+								<img src="resources/grade3.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Grade 3</p>
+									<a href="#" onclick="javascript:processSelection('Grade3');" class="info">Read More</a>
+								</div>		                    
+							</div>
+						</div>
+						<div class="span2">
+							<div class="view view-first">
+								<img src="resources/grade4.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Grade 4</p>
+									<a href="#" onclick="javascript:processSelection('Grade4');" class="info">Read More</a>
+								</div>		                    
+							</div>
+						</div>
+					</div>
+					<div class="container row">
+						<div class="span2">
+							<div class="view view-first">
+								<img src="resources/grade5.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Grade 5</p>
+									<a href="#" onclick="javascript:processSelection('Grade5');" class="info">Read More</a>
+								</div>		                    
+							</div>
+						</div>
+						<div class="span2">
+							<div class="view view-first">
+								<img src="resources/grade6.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Grade 6</p>
+									<a href="#" onclick="javascript:processSelection('Grade6');" class="info">Read More</a>
+								</div>		                    
+							</div>
+						</div>
+					</div>
+					<div class="container row">
+						<div class="span2">
+							<div class="view view-first">
+								<img src="resources/grade7.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Grade 7</p>
+									<a href="#" onclick="javascript:processSelection('Grade7');" class="info">Read More</a>
+								</div>		                    
+							</div>
+						</div>
+						<div class="span2">
+							<div class="view view-first">
+								<img src="resources/grade8.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Grade 8</p>
+									<a href="#" onclick="javascript:processSelection('Grade8');" class="info">Read More</a>
+								</div>		                    
+							</div>
+						</div>
+					</div>
+               </div>
+                <div class="span4">
+                    <h2>Learn By Interests</h2>
+                    <p>Just a placeholder for Advanced learning topics</p>
+                    <p><a class="btn" href="#" onclick="javascript:processSelection('Learn By Interests');" >View details &raquo;</a></p>
+
+					<div class="container row">
+						<div class="span2">
+							<div class="view view-first">
+								<img src="resources/logic.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Logic</p>
+									<a href="#" onclick="javascript:processSelection('Logic');" class="info">Read More</a>
+								</div>		                    
+							</div>
+						</div>
+						<div class="span2">
+							<div class="view view-first">
+								<img src="resources/puzzlers.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Puzzlers</p>
+									<a href="#" onclick="javascript:processSelection('Puzzlers');" class="info">Read More</a>
+								</div>		                    
+							</div>
+						</div>
+					</div>
+					<div class="container row">
+						<div class="span2">
+							<div class="view view-first">
+								<img src="resources/criticalthinking.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Critical Thinking</p>
+									<a href="#" onclick="javascript:processSelection('Critical Thinking');" class="info">Read More</a>
+								</div>		                    
+							</div>
+						</div>
+						<div class="span2">
+							<div class="view view-first">
+								<img src="resources/EarthScience.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Earth Science</p>
+									<a href="#" onclick="javascript:processSelection('Earth Science');" class="info">Read More</a>
+								</div>		                    
+							</div>
+						</div>
+					</div>
+					<div class="container row">
+						<div class="span2">
+							<div class="view view-first">
+								<img src="resources/Technology.jpg" />
+								<div class="mask">
+									<!--<h2>Hover Style #1</h2>-->
+									<p>Click for Technology</p>
+									<a href="#" onclick="javascript:processSelection('Technology');" class="info">Read More</a>
+								</div>		                    
+							</div>
+						</div>
+					</div>
+
+                </div>
+			</div>
+								
+            <hr>
+            			
+            <footer>
+                <p>&copy; Truve Labs Inc.</p>
+            </footer>
+
+        </div> <!-- /container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js"></script>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.js"><\/script>')</script>
+
+
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
